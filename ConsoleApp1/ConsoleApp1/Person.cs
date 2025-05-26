@@ -5,25 +5,24 @@
     {
         public string name;
 
-        public Person(string name)
-        {
-            this.name = name;
-        }
+        // public Person(string name)
+        // {
+        //     this.name = name;
+        // }
 
         public void intreduce(string to)
         {
             Console.WriteLine("HI {0}, I am {1} ", to , name);
         }
-    }
 
-    class Program
-    {
-        static void Main(string[] args)
+        public static Person parss(string str)
         {
-            Person person = new Person("Ahmed");
-            //or var person = new Person("Ahmed");  
-            person.intreduce("ayoub");
+            var person = new Person();
+            person.name = str;
+            return person;
         }
     }
+
+    
         
 }
