@@ -1,12 +1,9 @@
 ﻿namespace ConsoleApp1;
 
-public class Text : PresentationObject
+public class Text : Shape 
 {
     public int FontSize { get; set; }
     public string FontName { get; set; }
 
-    public void AddHyperLink(string url)
-    {
-        Console.WriteLine("Adding HyperLink" + url);
-    }
+    
 }

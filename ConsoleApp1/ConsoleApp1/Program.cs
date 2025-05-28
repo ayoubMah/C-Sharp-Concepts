@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Net;
 
 namespace MyNamespace;
@@ -42,18 +43,25 @@ class Program
         // var stoptval =  stopWatch.Stop();
         // Console.WriteLine(stoptval);
         
-        var text = new Text();
-        text.width = 100;
-        text.height = 100;
-        text.Copy();
+        //var text = new Text();
+        // text.width = 100;
+        // text.height = 100;
+        // text.Copy();
 
-        var dbMigrator = new DbMigrator(new Logger());
-        var logger = new Logger();
-        var installer = new Installer(logger);
+        // var dbMigrator = new DbMigrator(new Logger());
+        // var logger = new Logger();
+        // var installer = new Installer(logger);
+        //
+        // dbMigrator.Migrate();
+        // installer.Install();
+        //
+        // var car = new Car("Mercides");
+        //
+        // Text text2 = new Text();
+        // Shape shape = text2;
+        // StreamReader streamReader = new StreamReader()
+          
+
         
-        dbMigrator.Migrate();
-        installer.Install();
-        
-        var car = new Car("Mercides");
     }
 }
