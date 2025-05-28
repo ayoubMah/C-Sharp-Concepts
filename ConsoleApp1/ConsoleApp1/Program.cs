@@ -29,18 +29,31 @@ class Program
         //
         //
         // var customer = new Customer(1);
-        // customer.orders.Add(new Order());
+        // customer.orders.Add(new Order() );
         // customer.orders.Add(new Order());
         // //customer.promote(); // we lost all cuz we declare new one 
         // Console.WriteLine(customer.orders.Count);
 
-        Console.WriteLine("Hello World!");
-        var stopWatch =  new Stopwatch();
-        var startval  = stopWatch.Start();
-        Console.WriteLine(startval);
+        // Console.WriteLine("Hello World!"); 
+        // var stopWatch =  new Stopwatch();
+        // var startval  = stopWatch.Start();
+        // Console.WriteLine(startval);
+        //
+        // var stoptval =  stopWatch.Stop();
+        // Console.WriteLine(stoptval);
         
-        var stoptval =  stopWatch.Stop();
-        Console.WriteLine(stoptval);
+        var text = new Text();
+        text.width = 100;
+        text.height = 100;
+        text.Copy();
+
+        var dbMigrator = new DbMigrator(new Logger());
+        var logger = new Logger();
+        var installer = new Installer(logger);
         
+        dbMigrator.Migrate();
+        installer.Install();
+        
+        var car = new Car("Mercides");
     }
 }
